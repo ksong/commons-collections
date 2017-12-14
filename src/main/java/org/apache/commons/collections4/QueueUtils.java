@@ -102,6 +102,6 @@ public class QueueUtils {
      */
     @SuppressWarnings("unchecked") // OK, empty queue is compatible with any type
     public static <E> Queue<E> emptyQueue() {
-        return EMPTY_QUEUE;
+        return (Queue<E>) EMPTY_QUEUE;
     }
 }

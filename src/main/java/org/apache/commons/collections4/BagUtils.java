@@ -245,7 +245,7 @@ public class BagUtils {
      */
     @SuppressWarnings("unchecked") // OK, empty bag is compatible with any type
     public static <E> Bag<E> emptyBag() {
-        return EMPTY_BAG;
+        return (Bag<E>) EMPTY_BAG;
     }
 
     /**

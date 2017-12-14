@@ -53,7 +53,7 @@ public class EmptyListIterator<E> extends AbstractEmptyIterator<E> implements
      */
     @SuppressWarnings("unchecked")
     public static <E> ResettableListIterator<E> resettableEmptyListIterator() {
-        return RESETTABLE_INSTANCE;
+        return (ResettableListIterator<E>) RESETTABLE_INSTANCE;
     }
 
     /**
@@ -63,7 +63,7 @@ public class EmptyListIterator<E> extends AbstractEmptyIterator<E> implements
      */
     @SuppressWarnings("unchecked")
     public static <E> ListIterator<E> emptyListIterator() {
-        return INSTANCE;
+        return (ListIterator<E>) INSTANCE;
     }
 
     /**
